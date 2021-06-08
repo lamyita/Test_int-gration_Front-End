@@ -1,0 +1,229 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #efefef;
+  font: 14px/1 "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.header {
+  margin: 120px auto;
+}
+
+/* ************button s'inscrice properties ***************/
+
+.btn {
+  background-color: #ff5160;
+  width: 100%;
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+}
+
+/* *********************************paragraph after titel  properties *************************************************************/
+
+.paragraph_head {
+
+
+    top: 387px;
+    left: 443px;
+    width: 298px;
+    height: 21px;
+    text-align: left;
+    font: Roboto;
+    letter-spacing: 0.15px;
+    color: #00000099;
+    opacity: 1;
+    
+    }
+
+
+
+/* *******************************************picture person svg   properties **********************************/
+
+.bi-person svg {
+  background-color: #ff5160;
+  box-shadow: 0px 4px 5px #00000024;
+  border-radius: 4px;
+  opacity: 1;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+  top: -31px;
+  left: 28px;
+  padding: 8px;
+}
+
+/* ***************************************** start checkbox accepte  properties **********************************/
+
+.checkbox {
+  padding: 2px;
+}
+
+/* ************  conditions generales  properties ***************/
+
+.checkbox a {
+  color: #ff5160;
+}
+/****************************************title ************************************/
+.title-Inscription{
+ 
+  color: #000000DE;
+  font-size: 21px;
+  
+  }
+/* ********************************************end checkbox   properties *****************************************/
+
+form {
+  padding: 30px 47px 24px 24px;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+.form:after {
+  transform: skew(-10deg, -10deg);
+}
+
+/*///////////////************************************  START message under filed password ********************************************/
+
+.msgCaracterPassword {
+  color: rgb(154, 147, 154);
+  top: 50px;
+  font-size: 10px;
+  position: absolute;
+  left: 11px;
+}
+
+/*///////////////************************************end  message under filed password ********************************************/
+
+/* ******************************password eye icon show and hide******************************************************* */
+
+.eye-icon {
+  margin-top: 15px;
+  margin-left: 311px;
+  z-index: 8;
+  color: #00000099;
+  position: absolute;
+}
+
+/* *********************************************************************************************************** */
+
+.eye-icon-addMargin {
+  margin-top: -32px;
+}
+
+.form-width {
+  width: 411px;
+}
+
+
+.img-parant {
+  width: 671px;
+  min-height: 481px;
+  height: 100%;
+  background-image: url(../img/urn_aaid_sc_US_36530acd-4a83-4ae0-9046-de2ea6a931ab.png);
+  background-size: cover;
+  background-position: 0 0;
+  filter: brightness(0.7);
+}
+
+.fixed-width {
+  max-width: 1082px;
+  margin: auto !important;
+}
+
+@media(max-width: 1082px) {
+  .fixed-width {
+    max-width: 800px;
+  }
+  .img-parant {
+    width: 425px;
+  }
+  .form-width {
+    width: 375px;
+  }
+}
+
+@media(max-width: 425px) {
+  .fixed-width {
+    margin: auto;
+    max-width: 425px;
+  }
+  .img-parant {
+    width: 100%;
+  }
+  .form-width {
+    width: 100%;
+    margin: auto;
+  }
+  input {
+    width: 100%;
+  }
+
+  .row{
+    margin-right: -34px;
+  }
+ 
+}
+
+
+/* /////////////////////////input ////////////////////////////////////////////////////////////////////////*/
+
+input{
+  padding: 40px;
+}
+.form-group {
+  position: relative;
+  height: 49px;
+}
+
+.form-control{
+  padding: 23px 13px;
+
+  transition: border-color .1s ease-in-out,box-shadow .1s ease-in-out;
+}
+.form-control:focus{
+  box-shadow: 0 0 0 0.2rem rgb(96 0 9 / 0%);
+  border-color: rgb(255, 81, 96);
+}
+
+/* /////////////MSG ERROR Propr ////// */
+
+.form-group small {
+  font-size: 10px;
+  background: #fff;
+  color: var(--error-color);
+  position: absolute;
+  left: 10px;
+  bottom: 43px;
+  visibility: hidden;
+}
+
+/* /////////////MSG ERROR ////// */
+
+.form-group.error small {
+  visibility: visible;
+  color: #ff5160;
+}
+
+/*///////// color input if not match with what we need ///////////////////////// */
+
+.form-group.error input {
+  border-color: #ff5160;
+}
+
+/*///////////// after chck information///////////////////  */
+
+.form-group.success input {
+  border-color: green;
+}
