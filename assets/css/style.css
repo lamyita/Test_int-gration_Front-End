@@ -1,0 +1,210 @@
+html, body {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    background: #efefef;
+    font: 14px/1 "Roboto", sans-serif;
+  }
+ 
+
+  .header {
+    margin: 120px auto;
+  }
+
+  /* ************button s'inscrice properties ***************/
+.btn{
+    background-color: #ff5160;
+    width: 100%;
+    color: white;
+}
+.btn:hover{
+    color: white;
+
+}
+
+  /* *********************************paragraph after titel  properties *************************************************************/
+
+.paragraph_head{
+
+color: #454147;
+}
+  /* *******************************************picture person svg   properties **********************************/
+
+.bi-person svg{
+    background-color: #ff5160;
+    border-radius: 2px;
+    margin-top: -10px -1;
+    position: absolute;
+    width: 42px;
+    height: 45px;
+    top: 6pc;
+    left: 14pc;
+    padding: 4px;
+}
+
+  /* ***************************************** start checkbox accepte  properties **********************************/
+
+.checkbox{
+    padding: 2px;
+}
+  /* ************  conditions generales  properties ***************/
+
+.checkbox a{
+color: #ff5160;
+
+}
+
+  /* ********************************************end checkbox   properties *****************************************/
+
+form {
+    padding: 30px 47px 24px 24px;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+
+  }
+  .form:after {
+    transform: skew(-10deg, -10deg);
+}
+/*///////////////************************************  START message under filed password ********************************************/
+  .msgCaracterPassword{
+
+
+    color: rgb(154, 147, 154);
+    top: 41px;
+    font-size: 10px;
+    position: absolute;
+    left: 11px;
+
+}
+
+
+/*///////////////************************************end  message under filed password ********************************************/
+
+
+  /* ******************************password eye icon show and hide******************************************************* */
+  .eye-icon {
+    margin-top: 12px;
+    margin-left: 311px;  
+      z-index: 8;
+    color: rgb(168, 168, 168);
+    position: absolute;
+
+  }
+
+
+/* *********************************************************************************************************** */
+
+  .eye-icon-addMargin {
+      margin-top: -26px;
+  }
+
+.form-width{
+width: 411px;
+}
+  /* ////////////// Image ////// */
+  .image{
+    width: 100%;
+    height: 483px;
+
+  } 
+  .img-parant{
+      width: 671px;
+  }
+
+  .fixed-width {
+        max-width: 1082px;
+        margin: auto !important;
+
+   
+  }
+
+  @media(max-width: 1082px) {
+    .fixed-width {
+        max-width: 800px;
+    }
+    .img-parant{
+        width: 425px;
+    }
+
+    .form-width{
+        width: 375px;
+    }
+  }
+
+  @media(max-width: 425px) {
+    .fixed-width {
+        width: 100%;
+        margin: auto;
+        max-width: 425px;
+    }
+    .img-parant{
+        width: 100%;
+        
+    }
+
+    .form-width{
+        width: 100%;
+        margin: auto;
+    }
+
+    input {
+        width: 100%;
+    }
+    .bi-person svg{
+        
+        top: 6pc;
+        left: 1pc;
+    }
+    
+    
+  }
+
+  
+
+
+  /* /////////////////////////input ////////////////////////////////////////////////////////////////////////*/
+
+ 
+  
+  .form-group {
+    position: relative;
+    height: 49px;
+}
+
+
+/* /////////////MSG ERROR Propr ////// */
+
+.form-group small {
+    font-size: 10px;
+    background: #fff;
+    color: var(--error-color);
+    position: absolute;
+    left: 10px;
+    bottom: 43px;
+    visibility: hidden;
+}
+
+/* /////////////MSG ERROR ////// */
+.form-group.error small {
+    visibility: visible;
+    color: #ff5160;
+}
+/*///////// color input if not match with what we need ///////////////////////// */
+.form-group.error input {
+  border-color: #ff5160;
+}
+
+
+/*///////////// after chck information///////////////////  */
+.form-group.success input {
+  border-color: green;
+}
+
+
+ 
